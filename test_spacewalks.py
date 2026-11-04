@@ -6,22 +6,15 @@ from eva_data_analysis import text_to_duration
 def test_to_duration_no_minutes():
     actual = text_to_duration("10:00")
     expected = 10.00
-
-    if (actual == expected):
-        print("Pass")
-    else:
-        print("Fail")
+    assert(actual == expected)
         
 
 def test_to_duration_with_minutes():
     actual = text_to_duration("10:30")
     expected = 10.50
+    assert(actual == expected)
+    
 
-    if (actual == expected):
-        print("Pass")
-    else:
-        print("Fail")
+# Convention over configuration
 
-
-test_to_duration_no_minutes()
-test_to_duration_with_minutes()
+# Coverage
