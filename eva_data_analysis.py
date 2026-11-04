@@ -81,7 +81,7 @@ def plot_cumulative_time_in_space(df, graph_file):
     plt.savefig(graph_file)
     plt.show()
 
-
+# if input == "10:00" the result should be 10.00
 def text_to_duration(duration):
     """
     Convert a text format duration "HH:MM" to duration in hours
